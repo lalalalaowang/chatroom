@@ -1,37 +1,241 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--指定网页支持响应式：电脑和手机自适应-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../static/bw/dist/sketchy/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <title>首页</title>
+</head>
+<body>
 
-{% block content %}
-<div class="col-md-9 pad-right">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item active" aria-current="page">视频列表</li>
-        </ol>
-    </nav>
-    {% set v = data['video'] %}
-    <div class="card-columns">
-        {% if v['data'] %}
-        {% for val in v['data'] %}
-        <div class="card video-list" data-content-id="{{ val.id }}">
-            <img class="card-img-top mx-auto d-block video-img blur-up img-bk lazyloaded"
-                 src="/static/video/{{ val.logo }}">
-            <div class="card-body">
-                <span>{{ val.name }}</span>
+<nav class="navbar navbar-dark bg-primary justify-content-between">
+    <div class="container">
+        <a class="navbar-brand" id="site_name" href="index.html">弹幕视频/实时聊天</a>
+        <form class="form-inline">
+            <a href="login.html" class="btn btn-success my-2 my-sm-0">登录</a>
+            &nbsp;
+            <a href="regist.html" class="btn btn-danger my-2 my-sm-0">注册</a>
+        </form>
+    </div>
+</nav>
+
+<div class="container" id="main">
+    <div class="row">
+        <div class="col-md-9 pad-right">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">视频列表</li>
+                </ol>
+            </nav>
+            <div class="card-columns">
+                <div class="card">
+                    <img class="card-img-top mx-auto d-block video-img blur-up img-bk lazyloaded"
+                         data-src="holder.js/254x130">
+                    <div class="card-body">
+                        <span>视频名称</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top mx-auto d-block video-img blur-up img-bk lazyloaded"
+                         data-src="holder.js/254x130">
+                    <div class="card-body">
+                        <span>视频名称</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top mx-auto d-block video-img blur-up img-bk lazyloaded"
+                         data-src="holder.js/254x130">
+                    <div class="card-body">
+                        <span>视频名称</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top mx-auto d-block video-img blur-up img-bk lazyloaded"
+                         data-src="holder.js/254x130">
+                    <div class="card-body">
+                        <span>视频名称</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top mx-auto d-block video-img blur-up img-bk lazyloaded"
+                         data-src="holder.js/254x130">
+                    <div class="card-body">
+                        <span>视频名称</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top mx-auto d-block video-img blur-up img-bk lazyloaded"
+                         data-src="holder.js/254x130">
+                    <div class="card-body">
+                        <span>视频名称</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top mx-auto d-block video-img blur-up img-bk lazyloaded"
+                         data-src="holder.js/254x130">
+                    <div class="card-body">
+                        <span>视频名称</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top mx-auto d-block video-img blur-up img-bk lazyloaded"
+                         data-src="holder.js/254x130">
+                    <div class="card-body">
+                        <span>视频名称</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top mx-auto d-block video-img blur-up img-bk lazyloaded"
+                         data-src="holder.js/254x130">
+                    <div class="card-body">
+                        <span>视频名称</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top mx-auto d-block video-img blur-up img-bk lazyloaded"
+                         data-src="holder.js/254x130">
+                    <div class="card-body">
+                        <span>视频名称</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top mx-auto d-block video-img blur-up img-bk lazyloaded"
+                         data-src="holder.js/254x130">
+                    <div class="card-body">
+                        <span>视频名称</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top mx-auto d-block video-img blur-up img-bk lazyloaded"
+                         data-src="holder.js/254x130">
+                    <div class="card-body">
+                        <span>视频名称</span>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul class="pagination pagination-sm">
+                    <li class="page-item"><a class="page-link" href="#">首页</a></li>
+                    <li class="page-item"><a class="page-link" href="#">上一页</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1/3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">下一页</a></li>
+                    <li class="page-item"><a class="page-link" href="#">尾页</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md-3 pad-left">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="请输入搜索内容！"
+                       aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">搜索</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    技术架构
+                </div>
+                <div class="card-body">
+                    <table class="table table-sm">
+                        <tr>
+                            <td class="text-primary" style="width: 50%">编程语言：</td>
+                            <td class="text-danger">Python</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary">数据库：</td>
+                            <td class="text-danger">MySQL</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary">内存缓存：</td>
+                            <td class="text-danger">Redis</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary">反向代理：</td>
+                            <td class="text-danger">Nginx</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary">操作系统：</td>
+                            <td class="text-danger">CentOS</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary">后端框架：</td>
+                            <td class="text-danger">Tornado</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary">表单验证：</td>
+                            <td class="text-danger">WTForms</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary">数据库ORM：</td>
+                            <td class="text-danger">SQLAlchemy</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary">加密工具：</td>
+                            <td class="text-danger">Werkzeug</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary">WebSocket通信：</td>
+                            <td class="text-danger">SockJS-Tornado</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary">前端界面：</td>
+                            <td class="text-danger">HTML/JS/CSS</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
-        {% end %}
-        {% end %}
     </div>
-    {% module page(v,data['q']) %}
 </div>
-{% end %}
-
-{% block foot %}
-<script>
-    $(document).ready(function () {
-        $(".video-list").click(function () {
-            var id = $(this).attr("data-content-id");
-            location.href = "/playchat/?id=" + id;
-        });
-    });
-</script>
-{% end %}
+<div class="jumbotron foot-section">
+    <hr class="my-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <img data-src="../static/images/face.png"
+                     class="lazyload blur-up img-fluid mx-auto d-block">
+            </div>
+            <div class="col-md-4">
+                <h5>张金龙</h5>
+                <p class="info-text">— 人生苦短，我用Python！</p>
+                <p class="info-text">微信：13700632835</p>
+                <p class="info-text">手机：13700632835</p>
+                <p class="info-text">邮箱：1780316635@qq.com</p>
+                <p class="info-text">编程爱好者，多年丰富的项目经验，擅长python、php、golang、centos、reactnative等技术。</p>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="text-center info-text">站长微信</p>
+                        <img data-src="../static/images/weixin.jpg"
+                             class="lazyload blur-up img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-center info-text">站长QQ</p>
+                        <img data-src="../static/images/qq.jpg"
+                             class="lazyload blur-up img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-center info-text">python问答QQ群</p>
+                        <img data-src="../static/images/qq_group.jpg"
+                             class="lazyload blur-up img-fluid mx-auto d-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="my-4">
+    <div class="container">
+        <ul class="list-inline text-center">
+            <li class="info-text"><a href="http://www.miibeian.gov.cn/" target="_blank">滇ICP备17011280号</a>
+            </li>
+            <li class="info-text">© 2018-2019 张金龙[python拓荒者]</li>
+        </ul>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/lazysizes/4.0.2/lazysizes.min.js"></script>
+<script src="https://cdn.bootcss.com/holder/2.9.4/holder.min.js"></script>
+</body>
+</html>

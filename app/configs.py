@@ -1,3 +1,3 @@
 configs = dict(
-    debug=True
+    debug=True  # 配置是否开启debug模式
 )
