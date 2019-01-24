@@ -1,0 +1,11 @@
+*.e4p
+*Ui_*.py
+*tmp
+out.png
+*.settings*
+.pydevproject
+*.project
+*_eric6project*
+*__pycache__*
+settings.json
+.idea

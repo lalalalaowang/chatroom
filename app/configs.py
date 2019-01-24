@@ -1,0 +1,3 @@
+configs = dict(
+    debug=True
+)
