@@ -7,7 +7,6 @@ metadata = Base.metadata
 
 
 class Video(Base):
-
     __tablename__ = 'video'
 
     id = Column(INTEGER, primary_key=True, )
@@ -19,7 +18,6 @@ class Video(Base):
 
 
 class Msg(Base):
-
     __tablename__ = 'msg'
 
     id = Column(INTEGER, primary_key=True)
@@ -29,7 +27,6 @@ class Msg(Base):
 
 
 class User(Base):
-
     __tablename__ = 'user'
 
     id = Column(INTEGER, primary_key=True)
@@ -48,6 +45,7 @@ class User(Base):
 if __name__ == "__main__":
     from mysql import connector
     from sqlalchemy import create_engine
+
     db_configs = dict(
         host='127.0.0.1',
         port='3306',
@@ -56,5 +54,5 @@ if __name__ == "__main__":
         password='111222aA',
     )
     db_uri = 'mysql+mysqlconnector://{user}:{password}@{host}:{port}/{name}'.format(**db_configs)
-    engine = create_engine(db_uri,encoding='utf-8',echo=True)
+    engine = create_engine(db_uri, encoding='utf-8', echo=True)
     metadata.create_all(engine)

@@ -3,5 +3,5 @@ mysql-connector-python
 sqlalchemy
 sockjs-tornado
 redis
-WTForms
-Werkzeug
+wtforms
+werkzeug
